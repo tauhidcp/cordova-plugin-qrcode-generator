@@ -31,7 +31,7 @@ first, we need to declare the container for qr code and some input tag like belo
 
 ``` 
 <input id="isiqr" type="text" value="http://www.tauhidslab.my.id" style="width:90%" /><br />
-<div id="qrcode" style="width:256px; height:256px; margin-top:15px;"></div></br>
+<div id="qrcode" style="width:256px; height:256px; margin-top:15px;"><!--QR Code Container--></div></br>
 			
 <input type="button" value="Make QR" id="makeqr" ></br></br>
 <input type="button" value="Download QR" id="downloadqr" ></br></br>
