@@ -1,0 +1,25 @@
+{
+  "name": "id.my.tauhidslab.qrcode",
+  "version": "0.1.0",
+  "description": "cordova plugin to create qr code into html div tag and export to image file",
+  "cordova": {
+    "id": "id.my.tauhidslab.qrcode",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tauhidcp/cordova-plugin-qrcode-generator.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Ahmad Tauhid, S.Kom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tauhidcp/cordova-plugin-qrcode-generator/issues"
+  },
+  "homepage": "https://github.com/tauhidcp/cordova-plugin-qrcode-generator#readme"
+}

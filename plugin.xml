@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="id.my.tauhidslab.qrcode" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>cordova-plugin-qrcode-generator</name>
+	<js-module src="www/QrGen.js" name="QrGen">
+         <clobbers target="cordova.plugins.QrGen" />
+    </js-module>
+	<js-module src="www/Qr2Image.js" name="Qr2Image">
+         <clobbers target="cordova.plugins.Qr2Image" />
+    </js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="QrGen">
+				<param name="android-package" value="id.my.tauhidslab.qrcode.QrGen" />
+			</feature>
+			<feature name="Qr2Image">
+				<param name="android-package" value="id.my.tauhidslab.qrcode.Qr2Image" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml"></config-file>
+		<config-file target="AndroidManifest.xml" parent="/*">
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+			<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+		</config-file>
+		<source-file src="src/android/Qr2Image.java" target-dir="src/id/my/tauhidslab/qrcode" />
+	</platform>
+</plugin>
